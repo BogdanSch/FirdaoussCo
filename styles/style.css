@@ -43,7 +43,7 @@ body.lock {
 }
 
 main {
-	margin-top: 70px;
+	/* margin-top: 50px; */
 	flex: 1;
 	display: flex;
 	flex-direction: column;
@@ -384,37 +384,48 @@ header {
 	max-width: 50%;
 }
 
-.hobbies__list {
+
+/* Special Hobbies - Start */
+
+.special-hobbies {
+	margin-top: 260px;
+}
+
+.special-hobbies__title{
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.special-hobbies__list {
 	text-decoration: none;
-	margin-top: 300px;
 	display: flex;
 	flex-direction: column;
 	row-gap: 160px;
 }
 
-.hobbies__item {
+.special-hobbies__item {
 	max-width: 80%;
 }
 
-.hobbies__item:nth-child(1){
+.special-hobbies__item:nth-child(1) {
 	align-self: flex-start;
 }
 
-.hobbies__item:nth-child(2){
+.special-hobbies__item:nth-child(2) {
 	align-self: flex-end;
 }
 
-.hobbies__item:nth-child(3){
+.special-hobbies__item:nth-child(3) {
 	align-self: flex-start;
 }
 
-.hobbies__item-title {
+.special-hobbies__item-title {
 	margin-top: 8px;
 	font-size: 20px;
 	font-weight: 700;
 }
 
-.hobbies__item-image{
+.special-hobbies__item-image {
 	max-width: 80%;
 }
 
