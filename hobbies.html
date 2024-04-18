@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Firdaouss.Co - Home</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
@@ -14,17 +15,17 @@
         <div class="container">
           <div class="header__wrap">
             <div class="header__logo">
-              <a class="logo" href="index.html">Firdaouss.Co</a>
+              <a class="logo" href="./index.html">Firdaouss.Co</a>
             </div>
             <div class="header__burger">
               <span></span>
             </div>
             <ul class="header__list">
               <li class="header__item">
-                <a href="index.html">Home</a>
+                <a href="./index.html">Home</a>
               </li>
               <li class="header__item">
-                <a href="./hobbies.html" class="active">Hobbies</a>
+                <a href="./hobbies.html">Hobbies</a>
               </li>
               <li class="header__item">
                 <a href="./players.html">Spelers</a>
@@ -37,7 +38,11 @@
         </div>
       </header>
       <main class="main">
-        <section class="hobbies bg-color">
+        <section
+          class="hobbies bg-color"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           <div class="container">
             <div class="hobbies__wrap">
               <img
@@ -46,13 +51,47 @@
                 alt="Amsterdam City Preview"
               />
               <div class="text-content">
-                <h2>Over mijn hobbies</h2>
-				<p>Op deze pagina kunt u meer over mijn hobbies weten</p>
+                <h2>Eventjes over mijn hobbies</h2>
+                <p>Op deze pagina kunt u meer over mijn hobbies weten</p>
+                <a class="btn btn--more" href="#hobbiesList">Lees meer</a>
               </div>
-              <ul class="hobbies__list">
-                <li class="hobbies__item">Lezen</li>
-                <li class="hobbies__item">Kickboxen</li>
-                <li class="hobbies__item">Bakken</li>
+              <ul class="hobbies__list" id="hobbiesList">
+                <li
+                  class="hobbies__item"
+                  data-aos="fade-down"
+                  data-aos-duration="1500"
+                >
+                  <img
+                    src="./images/hobbies/rading.webp"
+                    alt="Reading - Hobbie"
+                    class="hobbies__item-image"
+                  />
+                  <h5 class="hobbies__item-title">Lezen</h5>
+                </li>
+                <li
+                  class="hobbies__item"
+                  data-aos="fade-down"
+                  data-aos-duration="1500"
+                >
+                  <img
+                    src="./images/hobbies/kickbox.jpeg"
+                    alt="Reading - Hobbie"
+                    class="hobbies__item-image"
+                  />
+                  <h5 class="hobbies__item-title">Kickboxen</h5>
+                </li>
+                <li
+                  class="hobbies__item"
+                  data-aos="fade-down"
+                  data-aos-duration="1500"
+                >
+                  <img
+                    src="./images/hobbies/baking.png"
+                    alt="Reading - Hobbie"
+                    class="hobbies__item-image"
+                  />
+                  <h5 class="hobbies__item-title">Bakken</h5>
+                </li>
               </ul>
             </div>
           </div>
@@ -68,7 +107,10 @@
         </div>
       </footer>
     </div>
-    <script src="./js/jQuery v3.6.0.js"></script>
+    <script src="./js/libs/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/burger.js"></script>
+    <script src="./js/page-links.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

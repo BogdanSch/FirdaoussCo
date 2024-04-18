@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Firdaouss.Co - Home</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
@@ -14,14 +15,14 @@
         <div class="container">
           <div class="header__wrap">
             <div class="header__logo">
-              <a class="logo" href="index.html">Firdaouss.Co</a>
+              <a class="logo" href="./index.html">Firdaouss.Co</a>
             </div>
             <div class="header__burger">
               <span></span>
             </div>
             <ul class="header__list">
               <li class="header__item">
-                <a href="index.html" class="active">Home</a>
+                <a href="./index.html">Home</a>
               </li>
               <li class="header__item">
                 <a href="./hobbies.html">Hobbies</a>
@@ -37,7 +38,11 @@
         </div>
       </header>
       <main class="main">
-        <section class="introduction bg-color">
+        <section
+          class="introduction bg-color"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           <div class="container">
             <div class="introduction__wrap">
               <img
@@ -61,13 +66,16 @@
         <div class="container">
           <div class="footer__wrap">
             <p class="footer__copyright">
-              @Deze website is gemaakt door Firdaouss Buamran!
+              @Deze website is gemaakt door Firdaouss Buamran, 2024!
             </p>
           </div>
         </div>
       </footer>
     </div>
-    <script src="./js/jQuery v3.6.0.js"></script>
+    <script src="./js/libs/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/burger.js"></script>
+    <script src="./js/page-links.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

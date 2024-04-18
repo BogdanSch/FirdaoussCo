@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Firdaouss.Co - Home</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
@@ -14,14 +15,14 @@
         <div class="container">
           <div class="header__wrap">
             <div class="header__logo">
-              <a class="logo" href="index.html">Firdaouss.Co</a>
+              <a class="logo" href="./index.html">Firdaouss.Co</a>
             </div>
             <div class="header__burger">
               <span></span>
             </div>
             <ul class="header__list">
               <li class="header__item">
-                <a href="index.html">Home</a>
+                <a href="./index.html">Home</a>
               </li>
               <li class="header__item">
                 <a href="./hobbies.html">Hobbies</a>
@@ -30,24 +31,25 @@
                 <a href="./players.html">Spelers</a>
               </li>
               <li class="header__item">
-                <a href="./contact.html" class="active">Contact</a>
+                <a href="./contact.html">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </header>
       <main class="main">
-        <section class="contact">
+        <section class="contact" data-aos="fade-right" data-aos-duration="1000">
           <div class="container">
             <div class="contact__wrap">
               <div class="text-content">
                 <h2>Hier kunt u mij contact gegevens vinden:</h2>
                 <ul class="contact__list">
                   <li class="contact__item">
+                    Email:
                     <a href="mailto:26605@edu.msa.nl">26605@edu.msa.nl</a>
                   </li>
                   <li class="contact__item">
-                    <a href="tel:+31 6 14094109">+31 (6) 1409 4109</a>
+                    Tel: <a href="tel:+31 6 14094109">+31 (6) 1409 4109</a>
                   </li>
                 </ul>
               </div>
@@ -70,7 +72,10 @@
         </div>
       </footer>
     </div>
-    <script src="./js/jQuery v3.6.0.js"></script>
+    <script src="./js/libs/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/burger.js"></script>
+    <script src="./js/page-links.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
