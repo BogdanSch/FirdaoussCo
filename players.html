@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firdaouss.Co - Favorite spelers</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__wrap">
+            <div class="header__logo">
+              <a class="logo" href="./index.html">Firdaouss.Co</a>
+            </div>
+            <div class="header__burger">
+              <span></span>
+            </div>
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="./index.html">Home</a>
+              </li>
+              <li class="header__item">
+                <a href="./hobbies.html">Hobbies</a>
+              </li>
+              <li class="header__item">
+                <a href="./players.html">Spelers</a>
+              </li>
+              <li class="header__item">
+                <a href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section
+          class="favorite-players bg-color"
+          data-aos="flip-right"
+          data-aos-duration="2500"
+        >
+          <div class="container">
+            <div class="favorite-players__wrap">
+              <h2 class="favorite-players__title">Favorite Football Players</h2>
+              <table class="players-table">
+                <thead>
+                  <tr>
+                    <th>Naam</th>
+                    <th>Foto</th>
+                    <th>Doelpunten</th>
+                    <th>Land</th>
+                    <th>Positie</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Lionel Messi</td>
+                    <td><img src="messi.jpg" alt="Lionel Messi" /></td>
+                    <td>700</td>
+                    <td>Argentina</td>
+                    <td>Forward</td>
+                  </tr>
+                  <tr>
+                    <td>Cristiano Ronaldo</td>
+                    <td><img src="ronaldo.jpg" alt="Cristiano Ronaldo" /></td>
+                    <td>750</td>
+                    <td>Portugal</td>
+                    <td>Forward</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__wrap">
+            <p class="footer__copyright">
+              @Deze website is gemaakt door Firdaouss Buamran, 2024!
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/libs/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/burger.js"></script>
+    <script src="./js/page-links.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
