@@ -20,6 +20,7 @@ body.lock {
 
 .wrapper {
 	overflow: hidden;
+	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 }
@@ -30,6 +31,7 @@ body.lock {
 	--introduce-bg: #F6F6F6;
 	--text-color: #4B5D68;
 	--accent: #00d781;
+	--accent-light: #00ff99;
 	--accent-dark: #007043;
 	--dark-blue: #00244f;
 }
@@ -42,6 +44,10 @@ body.lock {
 
 main {
 	margin-top: 70px;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 h5 {
@@ -173,8 +179,13 @@ header {
 }
 
 .header__logo a {
+	transition: all 0.5s ease;
 	font-size: 28px;
 	font-weight: 800;
+}
+
+.header__logo a:hover {
+	color: var(--accent);
 }
 
 .header__list {
@@ -183,11 +194,22 @@ header {
 	justify-content: center;
 	flex-wrap: wrap;
 	column-gap: 20px;
-	/* z-index: -1; */
 }
 
 .header__item {
 	padding: 20px 0;
+}
+
+.header__item a {
+	transition: all 0.6s ease;
+}
+
+.header__item a.active {
+	color: var(--accent-light);
+}
+
+.header__item a:hover {
+	color: var(--accent);
 }
 
 .sub-games {
@@ -195,9 +217,6 @@ header {
 	cursor: pointer;
 }
 
-.header__item a:hover {
-	color: #cfcfcf;
-}
 
 .sub-games:hover .header__lower__list {
 	display: block;
@@ -297,10 +316,12 @@ header {
 		align-items: center;
 		row-gap: 20px;
 		transition: all 0.5s ease 1;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
 	}
 
 	.header__list.active {
-		top: 52px;
+		top: 56px;
 	}
 
 	.header__item {
@@ -350,14 +371,35 @@ header {
 	margin-top: 50px;
 }
 
-.about__img {
+.about__image {
 	width: 40%;
 }
 
-/* About - End */
+/* Hobbies - Start */
+.hobbies {
+	margin-top: 50px;
+}
+
+.hobbies__image {
+	max-width: 50%;
+}
+
+.hobbies__list {
+	text-decoration: none;
+}
+
+.hobbies__item {
+	font-size: 20px;
+	font-weight: 500;
+}
+
 /* Contact - Start */
 .contact {
 	margin-bottom: 60px;
+}
+
+.contact__image {
+	max-width: 50%;
 }
 
 /* Footer - Start */
