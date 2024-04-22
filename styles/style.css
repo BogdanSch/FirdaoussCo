@@ -379,7 +379,7 @@ header {
 	border: 1px solid var(--grey);
 	border-radius: 10px;
 	padding: 20px;
-	transition: all 0.5s ease;
+	transition: all 0.5s ease !important;
 	min-height: 300px;
 	display: flex;
 	flex-direction: column;
@@ -388,7 +388,7 @@ header {
 }
 
 .features__item:hover {
-	transform: translateY(-5px);
+	transform: translateY(-5px) !important;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -434,19 +434,17 @@ header {
 	max-width: 50%;
 }
 
-
 /* Special Hobbies - Start */
-
 .special-hobbies {
 	margin-top: 260px;
 }
 
 .special-hobbies__title {
 	text-align: center;
-	margin-bottom: 40px;
 }
 
 .special-hobbies__list {
+	margin-top: 80px;
 	text-decoration: none;
 	display: flex;
 	flex-direction: column;
@@ -454,7 +452,7 @@ header {
 }
 
 .special-hobbies__item {
-	max-width: 80%;
+	max-width: 60%;
 }
 
 .special-hobbies__item:nth-child(1) {
@@ -470,32 +468,41 @@ header {
 }
 
 .special-hobbies__item-title {
-	margin-top: 8px;
+	text-align: center;
+	margin-top: 20px;
 	font-size: 20px;
 	font-weight: 700;
 }
 
-.special-hobbies__item-image {
-	max-width: 80%;
+.special-hobbies__item-description {
+	text-align: center;
+	margin-top: 4px;
 }
 
-/* Favorite players */
+.special-hobbies__item-image {
+	max-width: 100%;
+}
+
+/* Favorite Players - Start */
 .favorite-players__title {
 	text-align: center;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
+	margin-top: 80px;
 }
 
 .players-table {
 	width: 100%;
 	border-collapse: collapse;
-	overflow: scroll;
+	overflow-x: auto;
+	margin-bottom: 80px;
 }
 
 .players-table th,
 .players-table td {
 	padding: 10px;
 	text-align: center;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid var(--grey);
+	white-space: nowrap;
 }
 
 .players-table th {
@@ -504,13 +511,23 @@ header {
 }
 
 .players-table img {
-	max-width: 100px;
-	border-radius: 50%;
+	max-width: 100%;
+	height: auto;
+	border-radius: 8px;
 }
 
 .players-table td:first-child {
 	font-weight: bold;
 }
+
+@media screen and (max-width: 550px) {
+
+	.players-table th,
+	.players-table td {
+		padding: 8px;
+	}
+}
+
 
 /* Contact - Start */
 .contact {
@@ -522,16 +539,16 @@ header {
 }
 
 /* Map - Start */
-.map{
+.map {
 	margin-top: 160px;
 	margin-bottom: 60px;
 }
 
-.map__title{
+.map__title {
 	text-align: center;
 }
 
-.map__iframe{
+.map__iframe {
 	width: 100%;
 	height: 400px;
 }
