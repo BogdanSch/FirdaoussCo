@@ -486,15 +486,18 @@ header {
 /* Favorite Players - Start */
 .favorite-players__title {
 	text-align: center;
-	margin-bottom: 40px;
 	margin-top: 80px;
+}
+
+.table-outer {
+	margin-top: 80px;
+	margin-bottom: 80px;
+	overflow-x: auto;
 }
 
 .players-table {
 	width: 100%;
 	border-collapse: collapse;
-	overflow-x: auto;
-	margin-bottom: 80px;
 }
 
 .players-table th,
@@ -527,7 +530,6 @@ header {
 		padding: 8px;
 	}
 }
-
 
 /* Contact - Start */
 .contact {
